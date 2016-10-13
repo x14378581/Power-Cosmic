@@ -1,0 +1,181 @@
+/* CSS Resets */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%}
+
+
+/* ==================================================================================================================== */
+/* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
+/* ==================================================================================================================== */
+
+.container {
+padding-left: 20px;
+padding-right: 20px;
+background: #959595; /* Old browsers */
+background: -moz-linear-gradient(top,  #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#959595), color-stop(46%,#0d0d0d), color-stop(50%,#010101), color-stop(53%,#0a0a0a), color-stop(76%,#4e4e4e), color-stop(87%,#383838), color-stop(100%,#1b1b1b)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=0 ); /* IE6-9 */
+
+}
+
+.row {
+width: 100%;
+max-width: 1140px;
+min-width: 755px;
+margin: 0 auto;
+overflow: hidden;
+
+
+}
+
+  .slideshows,  .pc, .navbar, .contentH,#googleMap,#links{
+margin-right: 3.8%;
+float: left;
+min-height: 1px;
+background-color:FF6600;
+}
+
+.row .slideshows {
+width: 30.75%;
+}
+
+.row .pc {
+width: 100%;
+
+}
+
+.row .navbar {
+width: 100%;
+
+}
+#googleMap{
+	height:300px;
+	width:400px;
+	float:left;
+	}
+	
+.row .contentH{
+	width:100%;
+	}
+#contentH{
+font:20px fantasy;
+
+}
+#contentH p{
+color:#52CC52
+}
+#contentH img{
+	
+	width:500px;
+	height:100px;}
+#contentH h3{
+color:#8F24B2;
+font:30px sans-serif
+}
+#contentA{
+font:20px fantasy;
+
+}
+#contentA p{
+color:#52CC52
+}
+#contentA h3{
+color:#8F24B2;
+font:30px sans-serif
+}
+
+#contentV{
+	
+}
+.row.footer {
+width: 100%;
+background-color:red;
+}
+
+.last {
+margin-right: 0px;
+}
+
+img, object, embed {
+max-width: 100%;
+}
+
+img {
+	width: 560px;
+	height:300px;
+}
+#headbar{text-align:center;
+	height:7%;
+	width:100%;
+	 margin-left: auto ;
+ 	 margin-right: auto ;
+	
+}
+#headbar li{
+	display:inline;
+	list-style-type:none;
+	font:34px Arial;
+	
+}
+#headbar img{
+	
+	width:15%;
+	height:15%;}
+
+/* Smaller screens */
+
+@media only screen and (max-width: 1023px) {
+
+	body {
+	font-size: 0.8em;
+	line-height: 1.5em;
+	
+	}
+	
+	}
+
+
+/* Mobile */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+	font-size: 16px;
+	-webkit-text-size-adjust: none;
+	
+	}
+	
+	 .row .slideshows, .row .pc, .row .navbar,  body, .container, .row .contentH {
+	width: 100%;
+	min-width: 0;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+	
+	 .row .slideshows, .row .pc, .row .navbar, .row .footer, .row .contentH {
+	width: auto;
+	float: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+}
+#links {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	color: #3F3;
+	float:right;
+	padding-bottom:100px;
+	padding-right:50px;
+}
+#links img{
+	width: 80px;
+	height:80px;
+	}
